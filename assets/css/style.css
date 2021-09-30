@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "Libre Franklin";
-  src: url("/assets/fonts/Libre-Franklin/LibreFranklin-VariableFont_wght.ttf") format("truetype"),
-       url("/assets/fonts/Libre-Franklin/LibreFranklin-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Libre-Franklin/LibreFranklin-VariableFont_wght.ttf") format("truetype"),
+       url("../fonts/Libre-Franklin/LibreFranklin-VariableFont_wght.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Heebo/Heebo-VariableFont_wght.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -19,44 +19,99 @@
 
 body {
   font-family: 'Heebo', sans-serif;
+  font-size: 16px;
   background-color: #110F0F;
   color: white;
   padding: 0;
   margin: 0;
 }
 
-main {
+.wrapper {
   max-width: 1200px;
-  margin: 0 20px;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  align-items: end;
   padding-bottom: 4rem;
   min-height: 100vh;
   overflow: hidden;
+  width: 100%;
 }
 
+
+svg {
+  margin-top: 2rem;
+  width  : 100%;
+  height : 120px;
+}
+
+text{
+  font-family: "Libre Franklin", sans-serif;
+  fill: black;
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  text-anchor: middle;
+  
+  font-weight: 900;
+  font-size: 56px;
+}
+
+
 h1 {
+  visibility: hidden;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 900;
   letter-spacing: 0.3rem;
   line-height: 0.9;
   margin: 0;
-  font-size: 58px;
+  font-size: 56px;
   color: #110F0F;
 	-webkit-text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white, 3px 3px 0 #BB5100;
           text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white, 3px 3px 0 #BB5100;
 }
 
-h2 {
+.section {}
+
+.section__heading {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 900;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  display: inline-block;
+  margin: 0 0 1rem 0.5rem;;
   color: #110F0F;
-	-webkit-text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white;
-          text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white;
+  position: relative;
+  z-index: 2;
+	/* -webkit-text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white;
+          text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white; */
+          text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
+                       #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.section__intro {
+
+}
+
+hr {
+  background-color: #0a6a6c;
+  opacity: 0.5;
+  margin: 5rem 0 -1.3rem 0;
+  width: 45%;
+  height: 2rem;
+  border: none;
+  z-index: 1;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+footer {
+  width: 100%;
 }
