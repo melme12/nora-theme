@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   background-color: #110F0F;
   color: white;
-  padding: 0;
+  padding: 20px;
   margin: 0;
 }
 
@@ -43,36 +43,34 @@ header {
 }
 
 
-svg {
-  margin-top: 2rem;
-  width  : 100%;
-  height : 120px;
-}
-
-text{
-  font-family: "Libre Franklin", sans-serif;
-  fill: black;
-  stroke: white;
-  stroke-width: 2px;
-  stroke-linejoin: round;
-  text-anchor: middle;
-  
-  font-weight: 900;
-  font-size: 56px;
-}
-
-
 h1 {
-  visibility: hidden;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 900;
+  text-transform: uppercase;
   letter-spacing: 0.3rem;
-  line-height: 0.9;
+  line-height: 0.95;
   margin: 0;
   font-size: 56px;
   color: #110F0F;
-	-webkit-text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white, 3px 3px 0 #BB5100;
-          text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white, 3px 3px 0 #BB5100;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: -1.5px -1.5px 0 white,
+                        0 -1.5px 0 white,
+                        1.5px -1.5px 0 white,
+                        1.5px 0 0 white,
+                        1.5px 1.5px 0 white,
+                        0 1.5px 0 white,
+                       -1.5px 1.5px 0 white,
+                       -1.5px 0  0 white,
+                        5px 5px 6px #BB5100;
+          text-shadow: -1.5px -1.5px 0 white,
+                        0 -1.5px 0 white,
+                        1.5px -1.5px 0 white,
+                        1.5px 0 0 white,
+                        1.5px 1.5px 0 white,
+                        0 1.5px 0 white,
+                       -1.5px 1.5px 0 white,
+                       -1.5px 0  0 white,
+                        5px 5px 6px #BB5100;
 }
 
 .section {}
@@ -80,18 +78,30 @@ h1 {
 .section__heading {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 900;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   display: inline-block;
   margin: 0 0 1rem 0.5rem;;
   color: #110F0F;
   position: relative;
   z-index: 2;
-	/* -webkit-text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white;
-          text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white; */
-          text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
-                       #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: -1px -1px 0 white,
+  0 -1px 0 white,
+  1px -1px 0 white,
+  1px 0 0 white,
+  1px 1px 0 white,
+  0 1px 0 white,
+ -1px 1px 0 white,
+ -1px 0  0 white;
+text-shadow: -1px -1px 0 white,
+  0 -1px 0 white,
+  1px -1px 0 white,
+  1px 0 0 white,
+  1px 1px 0 white,
+  0 1px 0 white,
+ -1px 1px 0 white,
+ -1px 0  0 white;
 }
 
 .section__intro {
