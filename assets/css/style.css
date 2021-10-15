@@ -157,3 +157,12 @@ blockquote:nth-last-of-type(1) {
 footer {
   width: 100%;
 }
+
+.footer__social {
+  margin-right: 10px;
+}
+
+.footer__social-path {
+  fill: white;
+  fill-rule: nonzero;
+}
