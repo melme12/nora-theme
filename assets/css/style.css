@@ -73,11 +73,15 @@ h1 {
                         5px 5px 6px #BB5100;
 }
 
-.section {}
+.section {
+  font-size: 20px;
+  line-height: 1.3;
+}
 
 .section__heading {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 900;
+  font-size: 32px;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   display: inline-block;
@@ -105,7 +109,9 @@ text-shadow: -1px -1px 0 white,
 }
 
 .section__intro {
-
+  font-size: 14px;
+  line-height: 1.1;
+  margin-bottom: 40px;
 }
 
 hr {
