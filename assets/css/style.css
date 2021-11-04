@@ -44,8 +44,15 @@ header {
   min-height: 100vh;
   overflow: hidden;
   width: 100%;
+  background-image: url("../../img/profile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.header__img {
+  width: 100%;
+}
 
 h1 {
   font-family: "Libre Franklin", sans-serif;
@@ -113,6 +120,7 @@ text-shadow: -1px -1px 0 white,
 
 .section__intro {
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.1;
   margin-bottom: 40px;
 }
